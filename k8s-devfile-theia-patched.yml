@@ -1,0 +1,20 @@
+specVersion: 0.0.1
+name: k8s-plugin-theia-patched
+projects:
+  - name: simple-nodejs-weather-app
+    source:
+      type: git
+      location: 'https://github.com/azatsarynnyy/simple-nodejs-weather-app.git'
+tools:
+  - name: theia-ide
+    type: cheEditor
+    id: https://raw.githubusercontent.com/azatsarynnyy/che7-plugin-registry/master/org.eclipse.che.editor.theia:fixPluginInit
+  - name: exec-plugin
+    type: chePlugin
+    id: che-machine-exec-plugin:0.0.1
+  - name: k8s-plugin
+    type: chePlugin
+    id: https://raw.githubusercontent.com/eclipse/che-plugin-registry/master/plugins/ms-kubernetes-tools.vscode-kubernetes-tools:0.1.17
+  - name: yaml-plugin
+    type: chePlugin
+    id: redhat.vscode-yaml:0.3.0
