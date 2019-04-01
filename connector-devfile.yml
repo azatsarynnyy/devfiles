@@ -5,13 +5,13 @@ projects:
     source:
       type: git
       location: 'https://github.com/azatsarynnyy/simple-nodejs-weather-app.git'
-tools:
+components:
   - name: theia-ide
     type: cheEditor
-    id: https://raw.githubusercontent.com/eclipse/che-plugin-registry/master/plugins/org.eclipse.che.editor.theia:next
+    id: org.eclipse.che.editor.theia:next
   - name: exec-plugin
     type: chePlugin
     id: che-machine-exec-plugin:0.0.1
   - name: connector-plugin
     type: chePlugin
-    id: https://raw.githubusercontent.com/eclipse/che-plugin-registry/master/plugins/redhat.vscode-openshift-connector:0.0.17
+    id: redhat.vscode-openshift-connector:0.0.17

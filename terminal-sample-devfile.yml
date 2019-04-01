@@ -1,6 +1,6 @@
 specVersion: 0.0.1
 name: terminal-sample
-tools:
+components:
   - name: theia-ide
     type: cheEditor
     id: org.eclipse.che.editor.theia:1.0.0
