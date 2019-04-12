@@ -1,0 +1,13 @@
+specVersion: 0.0.1
+name: buildah-sidecar
+components:
+  - name: theia-ide
+    type: cheEditor
+    id: org.eclipse.che.editor.theia:next
+  - name: exec-plugin
+    type: chePlugin
+    id: che-machine-exec-plugin:0.0.1
+  - name: buildah-sidecar
+    type: dockerimage
+    image: azatsarynnyy/buildah-ubi7:latest
+    memoryLimit: 1G
