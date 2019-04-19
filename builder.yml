@@ -6,12 +6,9 @@ projects:
       type: git
       location: 'https://github.com/azatsarynnyy/simple-nodejs-weather-app.git'
 components:
-  - name: theia-ide
-    type: cheEditor
+  - type: cheEditor
     id: org.eclipse.che.editor.theia:next
-  - name: exec-plugin
-    type: chePlugin
+  - type: chePlugin
     id: che-machine-exec-plugin:0.0.1
-  - name: builder-plugin
-    type: chePlugin
+  - type: chePlugin
     id: https://raw.githubusercontent.com/azatsarynnyy/che7-plugin-registry/master/org.eclipse.che.plugin.image-builder:1.0.0
