@@ -7,10 +7,10 @@ projects:
       location: 'https://github.com/azatsarynnyy/simple-nodejs-weather-app.git'
 components:
   - type: cheEditor
-    id: org.eclipse.che.editor.theia:next
+    id: eclipse/che-theia/next
   - type: chePlugin
-    id: che-machine-exec-plugin:0.0.1
+#    id: ms-kubernetes-tools.vscode-kubernetes-tools:0.1.17
+    id: https://raw.githubusercontent.com/azatsarynnyy/che7-plugin-registry/master/plugins/ms-kubernetes-tools/vscode-kubernetes-tools/0.1.17-centos
+    memoryLimit: 1G
   - type: chePlugin
-    id: ms-kubernetes-tools.vscode-kubernetes-tools:0.1.17
-  - type: chePlugin
-    id: redhat.vscode-yaml:0.3.0
+    id: redhat/vscode-yaml/0.4.0
