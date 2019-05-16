@@ -6,9 +6,5 @@ projects:
       type: git
       location: 'https://github.com/azatsarynnyy/simple-nodejs-weather-app.git'
 components:
-  - type: cheEditor
-    id: org.eclipse.che.editor.theia:next
   - type: chePlugin
-    id: che-machine-exec-plugin:0.0.1
-  - type: chePlugin
-    id: redhat.vscode-openshift-connector:0.0.17
+    id: redhat/vscode-openshift-connector/0.0.17
