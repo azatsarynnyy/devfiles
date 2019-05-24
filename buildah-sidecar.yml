@@ -1,10 +1,20 @@
 specVersion: 0.0.1
 name: buildah-sidecar
+projects:
+  - name: simple-nodejs-weather-app
+    source:
+      type: git
+      location: 'https://github.com/azatsarynnyy/simple-nodejs-weather-app.git'
 components:
-  - type: cheEditor
-    id: org.eclipse.che.editor.theia:next
-  - type: chePlugin
-    id: che-machine-exec-plugin:0.0.1
-  - type: dockerimage
+  - alias: buildah
+    type: dockerimage
     image: azatsarynnyy/buildah-ubi7:latest
     memoryLimit: 1G
+    mountSources: true
+commands:
+  - name: build
+    actions:
+      - type: exec
+        component: buildah
+        command: buildah bud .
+        workdir: /projects/simple-nodejs-weather-app
