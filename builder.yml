@@ -1,14 +1,11 @@
-specVersion: 0.0.1
-name: builder
+apiVersion: 1.0.0
+metadata:
+  name: builder
 projects:
   - name: simple-nodejs-weather-app
     source:
       type: git
       location: 'https://github.com/azatsarynnyy/simple-nodejs-weather-app.git'
 components:
-  - type: cheEditor
-    id: org.eclipse.che.editor.theia:next
-  - type: chePlugin
-    id: che-machine-exec-plugin:0.0.1
   - type: chePlugin
     id: https://raw.githubusercontent.com/azatsarynnyy/che7-plugin-registry/master/org.eclipse.che.plugin.image-builder:1.0.0

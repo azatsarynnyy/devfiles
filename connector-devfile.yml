@@ -1,5 +1,6 @@
-specVersion: 0.0.1
-name: connector-plugin
+apiVersion: 1.0.0
+metadata:
+  name: connector-plugin
 projects:
   - name: simple-nodejs-weather-app
     source:

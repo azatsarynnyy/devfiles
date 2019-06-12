@@ -1,5 +1,6 @@
-specVersion: 0.0.1
-name: buildah-sidecar
+apiVersion: 1.0.0
+metadata:
+  name: buildah-sidecar
 projects:
   - name: simple-nodejs-weather-app
     source:

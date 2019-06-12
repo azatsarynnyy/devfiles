@@ -1,5 +1,6 @@
-specVersion: 0.0.1
-name: k8s-plugin
+apiVersion: 1.0.0
+metadata:
+  name: k8s-plugin
 projects:
   - name: simple-nodejs-weather-app
     source:
